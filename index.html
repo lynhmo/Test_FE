@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test fe</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main{
+            width: 90%;
+            float: right;
+            background: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; 
+        
+        }
+        .menu{
+            background: #000;
+            width: 10%;
+            float: left;
+            color: gray;
+            min-height: 100vh; 
+            /* height: 100vh; */
+
+        }
+        .container{
+            min-height: 100vh; 
+            /* height: 100vh; */
+        }
+        ul li{
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            border-bottom: 1px solid #5C5C5C;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        ul li:hover{
+            background: #5C5C5C;
+            color: #fff;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        .logo{
+            width: 310px;
+            height: 122px;
+            margin-bottom: 20px;
+        }
+        .content{
+            width: 90%;
+            padding: 20px;
+        }
+        .text{
+            background: #EFEFEF;
+            width: 100%;
+            padding: 30px;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flex{
+            display: flex;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        .items{
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 30px;
+        }
+        .childTitle{
+            font-size: 24px;
+            padding: 10px 0;
+        }
+        .child{
+            width: 31%;
+        }
+        .smallImg{
+            width: 128px;
+            height: 128px;
+            float: left; 
+        }
+        .childFontSize{
+            font-size: 16px;
+        }
+        .footer{
+            margin-top: auto;
+            background: #ececec;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- menu -->
+        <div class="menu">
+            <ul>
+                <li style="color: #fff;">Home</li>
+                <li>Services</li>
+                <li>News</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <div class="content center">
+                <img class="logo" src="image.png" alt="logo">
+                <div class="text center">
+                    <span class="bold" style="font-size: 18px;">Lorem ipsum dolor sit amet?</span>
+                    <p style="text-align: center; width: 80%; font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat. Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis, ligula in mattis sodales, augue justo tristique nulla, sed lacinia ante eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque suscipit maximus vestibulum. Phasellus congue mollis orci, sit amet luctus augue tristique eu. Donec vulputate odio neque, sed semper turpis pellentesque a.</p>
+                </div>
+                <div class="flex items">
+                    <div class="child">
+                        <div class="bold childTitle">Lorem ipsum dolor sit amet</div>
+                        <div class="childFontSize">
+                            <img class="smallImg" src="css.png" alt="css">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="bold childTitle">Lorem ipsum dolor sit amet</div>
+                        <div class="childFontSize">
+                            <img class="smallImg" src="dw.png" alt="dw">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="bold childTitle">Lorem ipsum dolor sit amet</div>
+                        <div class="childFontSize">
+                            <img class="smallImg" src="url.png" alt="url">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="" style="width: 90%;">
+                    Copyright © 2021
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
